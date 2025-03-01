@@ -8,11 +8,13 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Common */
@@ -59,12 +61,6 @@ a {
     z-index: 2;
 }
 
-.hero-wrap {
-    background: #e6f0ff;
-    height: calc(100vh - 90px);
-    position: relative;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -104,8 +100,13 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    padding-top: 130px;
+.hero-wrap {
+    background: #e6f0ff;
+    height: calc(100vh - 90px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero .info {
